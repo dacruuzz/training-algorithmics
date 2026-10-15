@@ -1,4 +1,4 @@
-package app.trainingalgorithmics.search.binary;
+package app.trainingalgorithmics.search.binary.entities;
 
 public class Binary {
 
