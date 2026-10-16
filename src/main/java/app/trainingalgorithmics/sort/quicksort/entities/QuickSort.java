@@ -5,6 +5,14 @@ import java.util.Arrays;
 import java.util.List;
 
 public class QuickSort {
+
+    /**
+     * Receives an array with random numbers ordered and
+     * transforms in asc sorted array.
+     *
+     * @param list array of primitive int type that will be sort.
+     * @return array of int sorted.
+     */
     public static int[] sort(int[] list) {
         if (list.length < 2) return list;
 
@@ -24,7 +32,6 @@ public class QuickSort {
         int[] lessArray  = sort(toArray(less));
         int[] equalArray = toArray(equal);
         int[] moreArray  = sort(toArray(more));
-
 
         return groupUp(lessArray, equalArray, moreArray);
     }
