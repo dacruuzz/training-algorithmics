@@ -1,6 +1,6 @@
-package app.trainingalgorithmics.search.binary.entities;
+package app.trainingalgorithmics.search.binary;
 
-public class Binary {
+public class BinarySearch {
 
     public static String search(Integer[] list, int target) {
         if (list.length < 1) {

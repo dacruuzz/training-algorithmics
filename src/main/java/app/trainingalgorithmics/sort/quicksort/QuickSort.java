@@ -1,4 +1,4 @@
-package app.trainingalgorithmics.sort.quicksort.entities;
+package app.trainingalgorithmics.sort.quicksort;
 
 import java.util.ArrayList;
 import java.util.List;
