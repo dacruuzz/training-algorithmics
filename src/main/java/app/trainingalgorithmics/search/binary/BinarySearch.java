@@ -2,30 +2,32 @@ package app.trainingalgorithmics.search.binary;
 
 public class BinarySearch {
 
-    public static String search(Integer[] list, int target) {
-        if (list.length < 1) {
-            return "List empty!";
-        }
-        if (list.length == 1) {
-            return "The number is: " + list[0];
-        }
-
+    /**
+     * Searches for the target in a sorted array using binary search.
+     * <p>
+     * Precondition: the array must be sorted in ascending order,
+     * otherwise the result is undefined.
+     * <p>
+     * Time: O(log n). Space: O(1).
+     *
+     * @param list   array of ints sorted in ascending order.
+     * @param target value to look for.
+     * @return the index of the target, or -1 if it is not found
+     * (including when the array is empty).
+     * If the target appears more than once, any matching index may be returned.
+     */
+    public static int search(int[] list, int target) {
         int low  = 0;
         int high = list.length - 1;
 
         while (low <= high) {
-            int medium = (low + high) / 2;
-            int guess  = list[medium];
+            int med = (low + high) / 2;
 
-            if (guess == target) {
-                return "Index of target is " + medium;
-            }
-            if (guess > target) {
-                high = medium - 1;
-            } else {
-                low = medium + 1;
-            }
+            if (list[med] == target) return med;
+            if (list[med] > target) high = med - 1;
+            else low = med + 1;
         }
-        return "Process finish";
+
+        return -1;
     }
 }
