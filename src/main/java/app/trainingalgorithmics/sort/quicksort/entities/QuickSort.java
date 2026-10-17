@@ -1,17 +1,18 @@
 package app.trainingalgorithmics.sort.quicksort.entities;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class QuickSort {
 
     /**
-     * Receives an array with random numbers ordered and
-     * transforms in asc sorted array.
+     * Sorts the given array in ascending order using QuickSort.
+     * The original array is not modified.
+     * <p>
+     * Time: O(n log n) average, O(n^2) worst case. Space: O(n) extra.
      *
-     * @param list array of primitive int type that will be sort.
-     * @return array of int sorted.
+     * @param list array of primitive ints to be sorted.
+     * @return a new array with the elements in ascending order.
      */
     public static int[] sort(int[] list) {
         if (list.length < 2) return list;
