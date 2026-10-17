@@ -12,7 +12,8 @@ public class QuickSort {
      * Time: O(n log n) average, O(n^2) worst case. Space: O(n) extra.
      *
      * @param list array of primitive ints to be sorted.
-     * @return a new array with the elements in ascending order.
+     * @return an array with the elements in ascending order.
+     * For inputs with fewer than 2 elements, the same array instance is returned.
      */
     public static int[] sort(int[] list) {
         if (list.length < 2) return list;
