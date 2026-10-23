@@ -1,4 +1,4 @@
-package app.trainingalgorithmics.hash.java.hashset;
+package app.trainingalgorithmics.hash.java.set;
 
 import app.trainingalgorithmics.hash.HashSetTable;
 

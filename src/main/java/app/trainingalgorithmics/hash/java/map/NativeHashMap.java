@@ -1,4 +1,4 @@
-package app.trainingalgorithmics.hash.java.hashmap;
+package app.trainingalgorithmics.hash.java.map;
 
 import app.trainingalgorithmics.hash.HashMapTable;
 
