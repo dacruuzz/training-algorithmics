@@ -1,6 +1,6 @@
 package app.trainingalgorithmics.hash;
 
-public interface HashTable<K, V> {
+public interface HashMapTable<K, V> {
 
     /**
      * Insert or update a value of the hash table.
@@ -31,7 +31,7 @@ public interface HashTable<K, V> {
      * Verify if the key informed is in map.
      *
      * @param key used for search a value linked at the key.
-     * @return value of the key.
+     * @return {@code true} if this hash table contains a mapping for the specified key, {@code false} otherwise.
      */
     boolean containsKey(K key);
 }

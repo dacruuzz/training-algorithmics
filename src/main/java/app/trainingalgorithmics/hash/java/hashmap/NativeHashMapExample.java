@@ -1,24 +1,26 @@
 package app.trainingalgorithmics.hash.java.hashmap;
 
-import app.trainingalgorithmics.hash.HashTable;
+import app.trainingalgorithmics.hash.HashMapTable;
 
 public class NativeHashMapExample {
 
     public static void main(String[] args) {
-        HashTable<String, String> hashTable = new NativeHashMap<>();
+        HashMapTable<String, String> hashMapTable = new NativeHashMap<>();
 
-        hashTable.put("Brasil", "Brasília");
-        hashTable.put("Inglaterra", "Londres");
-        hashTable.put("Japão", "Tokio");
-        hashTable.put("Angola", "Luanda");
+        hashMapTable.put("Brasil", "Brasília");
+        hashMapTable.put("Inglaterra", "Londres");
+        hashMapTable.put("Japão", "Tokio");
+        hashMapTable.put("Angola", "Luanda");
 
-        System.out.println(hashTable.get("Inglaterra"));
-        System.out.println(hashTable.get("França"));
+        System.out.println(hashMapTable.get("Inglaterra"));
+        System.out.println(hashMapTable.get("França"));
 
-        hashTable.remove("Inglaterra");
-        System.out.println(hashTable.get("Inglaterra"));
-        System.out.println(hashTable.containsKey("Inglaterra"));
+        hashMapTable.remove("Inglaterra");
+        System.out.println(hashMapTable.get("Inglaterra"));
+        System.out.println(hashMapTable.containsKey("Inglaterra"));
 
-        System.out.println(hashTable.remove("Japão"));
+        System.out.println(hashMapTable.remove("Japão"));
+
+        System.out.println(hashMapTable);
     }
 }

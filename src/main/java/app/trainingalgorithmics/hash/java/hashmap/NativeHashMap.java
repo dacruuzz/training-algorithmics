@@ -1,11 +1,11 @@
 package app.trainingalgorithmics.hash.java.hashmap;
 
-import app.trainingalgorithmics.hash.HashTable;
+import app.trainingalgorithmics.hash.HashMapTable;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class NativeHashMap<K, V> implements HashTable<K, V> {
+public class NativeHashMap<K, V> implements HashMapTable<K, V> {
 
     private final Map<K, V> map = new HashMap<>();
 
@@ -27,5 +27,10 @@ public class NativeHashMap<K, V> implements HashTable<K, V> {
     @Override
     public boolean containsKey(K key) {
         return map.containsKey(key);
+    }
+
+    @Override
+    public String toString() {
+        return map.toString();
     }
 }
