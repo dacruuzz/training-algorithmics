@@ -5,4 +5,5 @@ import java.util.Map;
 
 public interface Graph {
     String search(Map<String, List<String>> map, String start);
+    boolean contains(Map<String, List<String>> map, String start);
 }
